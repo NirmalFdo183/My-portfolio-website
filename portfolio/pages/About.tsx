@@ -3,7 +3,12 @@ import NavBar from '/Users/nirmalfernando/Myprojects/My-portfolio-website-1/port
 
 export const About = () => {
   return (
-    <div><NavBar/></div>
+    <>
+      <div><NavBar/>
+      
+      </div>
+    </>
+   
     
   )
 }
