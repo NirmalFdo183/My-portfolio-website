@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link} from "react-router-dom";
+import { Link} from "react-scroll";
+import { Projects } from '../pages/Projects';
+import { Contact } from '../pages/Contact';
 
 export const Hero = () => {
   return (
@@ -24,10 +26,10 @@ export const Hero = () => {
 
                     <div className="mt-6 flex justify-center lg:justify-start space-x-4">
                     <button className="bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-600">
-                        <Link to="/contact">Hire Me</Link>
+                        <Link to="Contact">Hire Me</Link>
                     </button>
                     <button className="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-black">
-                        <Link to="/projects">My Works</Link>
+                        <Link to="Projects">My Works</Link>
                     </button>
                     </div>
                 </div>
