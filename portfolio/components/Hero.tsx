@@ -6,7 +6,7 @@ import { Contact } from '../pages/Contact';
 export const Hero = () => {
   return (
     <>
-        <section className='bg-black text-white min-h-screen flex items-center justify-center'>
+        <section className='bg-black text-white min-h-screen flex  justify-center'>
             <div className="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center">
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                     <p className="text-yellow-500 text-lg font-semibold uppercase">
@@ -33,7 +33,7 @@ export const Hero = () => {
                     </button>
                     </div>
                 </div>
-                <div><img src="/img/myimg.png" alt="Nirmal Fernando" className="w-full max-w-sm mx-auto lg:mt-17 lg:max-w-xl lg:mx-0" /></div>
+                <div ><img src="/img/myimg.png" alt="Nirmal Fernando" className="w-full max-w-sm mx-auto lg:mt-17 lg:max-w-xl lg:mx-0" /></div>
                 
 
             </div>

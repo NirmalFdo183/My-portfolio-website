@@ -6,7 +6,9 @@ const NavBar: React.FC = () => {
     <header className="fixed top-0 left-0 w-full bg-black p-4 z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-white font-bold text-2xl mr-11">
-          Nirmal Fernando
+          <Link to="Home" smooth={true} duration={500} className="cursor-pointer text-white">
+            Nirmal Fernando
+          </Link>
         </div>
         <div className="hidden md:flex space-x-12 text-l">
           <Link to="Home" smooth={true} duration={500} className="cursor-pointer text-white">
