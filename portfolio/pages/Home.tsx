@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import { Hero } from '/Users/nirmalfernando/Myprojects/My-portfolio-website-1/portfolio/components/Hero.tsx';
+import { Hero } from '/Users/nirmalfernando/Myprojects/My-portfolio-website/portfolio/components/Hero.tsx';
 import { About } from '../pages/About';
 import { Resume } from '../pages/Resume';
 import { Services } from '../pages/Services';

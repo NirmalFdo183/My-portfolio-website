@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import { Home } from '/Users/nirmalfernando/Myprojects/My-portfolio-website-1/portfolio/pages/Home.tsx';
+import { Home } from '/Users/nirmalfernando/Myprojects/My-portfolio-website/portfolio/pages/Home.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
