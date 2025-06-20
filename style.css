@@ -1,6 +1,6 @@
 :root {
   --text-color: #1a1c20;
-  --link-color: #4a76ee;
+  --link-color: #5971b3;
   --background-color: #eeeff1;
 }
 *{
@@ -21,6 +21,7 @@ a{
     color: var(--link-color);
     text-decoration: none;
 }
+/* nav bar */
 nav{
     display: flex;
     justify-content: space-between;
@@ -47,7 +48,51 @@ nav .right a span{
     margin: 5px;
 }
 
+/*hero section*/
+.hero-section{
+    display:flex;
+    padding: 0 50px;
+    margin:50px 0;
+    margin-bottom: 100px;
+    align-items:center;
+    gap: 40px; 
+}
+.hero-section .text{
+    flex :5;
+}
+.hero-section .mypic{
+    flex:2;
+}
+.hero-section .mypic img{
+    height: 400px;
+    width:400px;
+    border-radius: 50%;
+    background-color: rgb(202, 204, 145);
+}
+.hero-section .text h2{
+    font-size: 45px;
+}
+.hero-section .text .links{
+    margin-top: 20px;
+}
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition:.3s;
+}
+.hero-section .text .links a:hover{
+    color: rgb(78, 78, 57);
+    border: 2px solid rgb(78, 78, 57);
+}
+
+
+
 @media(max-width: 600px){
+    /*nav bar*/
     nav{
         padding: 0 20px;
     }
@@ -62,4 +107,33 @@ nav .right a span{
         background-color: transparent;
         padding: 0;
     }
+
+    /*hero section*/
+    .hero-section{
+        padding: 0 20px;
+    }
+    .hero-section .text h2{
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    /*hero section*/
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 740px) {
+    /*hero section*/
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+    .hero-section .mypic img {
+        width: 300px;
+        height: 300px;
+    }
+
 }
