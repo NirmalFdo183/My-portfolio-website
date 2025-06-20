@@ -2,7 +2,7 @@
   --text-color: #1a1c20;
   --link-color: #4a76ee;
   --background-color: #eeeff1;
-
+}
 *{
     padding: 0;
     margin: 0;
@@ -20,4 +20,46 @@ body{
 a{
     color: var(--link-color);
     text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height:80px;
+    align-items: center;
+}
+nav .left a{
+    color: var(--text-color);
+    font-size:22px;
+    font-weight: 600;
+}
+nav .right a{
+    color: var(--text-color);
+    margin:0 10px;
+}
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding:5px 15px;
+    border-radius:5px;
+}
+nav .right a span{
+    margin: 5px;
+}
+
+@media(max-width: 600px){
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a span{
+        display:none;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
 }
